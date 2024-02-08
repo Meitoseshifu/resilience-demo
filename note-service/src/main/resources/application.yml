@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    generate-ddl: false
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      persons:
+        minimumNumberOfCalls: 5
+        slowCallDurationThreshold: 1000ms
+
+feign:
+  circuitbreaker:
+    enabled: true

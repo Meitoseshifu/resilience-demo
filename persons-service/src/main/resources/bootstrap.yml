@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: persons
+  cloud:
+    config:
+      uri: http://localhost:8889

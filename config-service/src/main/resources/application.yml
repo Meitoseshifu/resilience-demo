@@ -1,0 +1,12 @@
+server:
+  port: 8889
+
+spring:
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///home/andrew/IdeaProjects/resilience-demo/config-service/src/main/resources/config
+
